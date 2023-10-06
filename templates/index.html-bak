@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Page Title</title>
+</head>
+
+<body>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<p>My name is {{ first_name }} of {{ second_name }}.</p>
+<p>{{ stuff|safe }}</p>
+
+<h3>Favorite Pizza:</h3>
+{% for topping in favorite_pizza %}
+	{{ topping }}<br/>
+{% endfor %}
+</body>
+</html>
